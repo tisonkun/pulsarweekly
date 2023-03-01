@@ -30,6 +30,8 @@ const config = {
                 blog: {
                     path: 'issue',
                     routeBasePath: 'issue',
+                    blogSidebarTitle: 'Issues',
+                    blogSidebarCount: 'ALL',
                     showReadingTime: true,
                     editUrl: 'https://github.com/tisonkun/pulsarweekly/tree/main',
                 },
