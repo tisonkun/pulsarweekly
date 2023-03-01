@@ -54,8 +54,8 @@ const config = {
                         position: 'right',
                         label: 'Feed',
                         items: [
-                            { to: '/issue/atom.xml', label: 'Atom' },
-                            { to: '/issue/rss.xml', label: 'RSS' },
+                            { href: '/issue/atom.xml', target: "_blank", label: 'Atom' },
+                            { href: '/issue/rss.xml', target: "_blank", label: 'RSS' },
                         ],
                     },
                 ],

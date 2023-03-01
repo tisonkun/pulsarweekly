@@ -5,14 +5,19 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
 import styles from './index.module.css';
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 function HomepageHeader() {
+    const atom = <Link target="_blank" href={useBaseUrl("/issue/atom.xml")}>Atom format</Link>;
+    const rss = <Link target="_blank" href={useBaseUrl("/issue/rss.xml")}>RSS format</Link>;
+    const pulsar = <Link href="https://pulsar.apache.org">Apache Pulsar</Link>;
+
     return (
         <header className={clsx('hero', styles.heroBanner)}>
             <div className="container" style={{width: '52rem'}}>
                 <h1 className="hero__title">Welcome</h1>
                 <p>
-                    This is the home of the Pulsar Weekly News, brining you news about the development of <Link href="https://pulsar.apache.org">Apache Pulsar</Link>, a distributed messaging and streaming platform, and its open and inclusive community.
+                    This is the home of the Pulsar Weekly News, brining you news about the development of {pulsar}, a distributed messaging and streaming platform, and its open and inclusive community.
                 </p>
                 <p>
                     Click the "Browsing Issues" button below to see the most recent weekly issues.
@@ -23,7 +28,7 @@ function HomepageHeader() {
                     </Link>
                 </div>
                 <p>
-                    You can also subscribe to feeds of this weekly in <Link to="/issue/rss.xml">RSS format</Link> or <Link to="/issue/atom.xml">Atom format</Link>.
+                    You can also subscribe to feeds of this weekly in {atom} or {rss}.
                 </p>
             </div>
         </header>
