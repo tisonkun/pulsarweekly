@@ -28,6 +28,8 @@ const config = {
             ({
                 docs: false,
                 blog: {
+                    path: 'issue',
+                    routeBasePath: 'issue',
                     showReadingTime: true,
                     editUrl: 'https://github.com/tisonkun/pulsarweekly/tree/main',
                 },
@@ -44,7 +46,16 @@ const config = {
             navbar: {
                 title: 'Pulsar Weekly',
                 items: [
-                    {to: '/blog', label: 'Blog Feed', position: 'right'},
+                    {to: '/issue', label: 'Issue', position: 'right'},
+                    {
+                        type: 'dropdown',
+                        position: 'right',
+                        label: 'Feed',
+                        items: [
+                            { to: '/issue/atom.xml', label: 'Atom' },
+                            { to: '/issue/rss.xml', label: 'RSS' },
+                        ],
+                    },
                 ],
             },
             footer: {

@@ -15,11 +15,11 @@ function HomepageHeader() {
                     This is the home of the Pulsar Weekly News, brining you news about the development of <Link href="https://pulsar.apache.org">Apache Pulsar</Link>, a distributed messaging and streaming platform, and its open and inclusive community.
                 </p>
                 <p>
-                    Click the "Read Blog Feed" button below to see the most recent blog posts:
+                    Click the "Browsing Issues" button below to see the most recent weekly issues:
                 </p>
                 <div className={styles.buttons}>
-                    <Link className="button button--secondary button--lg" to="/blog">
-                        Read Blog Feed
+                    <Link className="button button--secondary button--lg" to="/issue">
+                        Browsing Issues
                     </Link>
                 </div>
             </div>
