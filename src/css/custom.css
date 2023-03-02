@@ -22,3 +22,15 @@
   height: 200px;
   width: 200px;
 }
+
+html.plugin-blog h2,
+html.plugin-blog.blog-post-page h1 {
+    font-size: 2rem;
+}
+
+@media (max-width: 576px) {
+  html.plugin-blog h2,
+  html.plugin-blog.blog-post-page h1 {
+      font-size: 1.5rem;
+  }
+}
