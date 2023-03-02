@@ -28,8 +28,8 @@ const config = {
             ({
                 docs: false,
                 blog: {
-                    path: 'issue',
-                    routeBasePath: 'issue',
+                    path: 'newsletter',
+                    routeBasePath: 'newsletter',
                     blogSidebarTitle: 'Issues',
                     blogSidebarCount: 'ALL',
                     showReadingTime: true,
@@ -48,14 +48,14 @@ const config = {
             navbar: {
                 title: 'Pulsar Weekly',
                 items: [
-                    {to: '/issue', label: 'Issue', position: 'right'},
+                    {to: '/newsletter', label: 'Newsletter', position: 'right'},
                     {
                         type: 'dropdown',
                         position: 'right',
                         label: 'Feed',
                         items: [
-                            { href: '/issue/atom.xml', target: "_blank", label: 'Atom' },
-                            { href: '/issue/rss.xml', target: "_blank", label: 'RSS' },
+                            { href: '/newsletter/atom.xml', target: "_blank", label: 'Atom' },
+                            { href: '/newsletter/rss.xml', target: "_blank", label: 'RSS' },
                         ],
                     },
                 ],

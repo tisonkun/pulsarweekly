@@ -8,8 +8,8 @@ import styles from './index.module.css';
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
 function HomepageHeader() {
-    const atom = <Link target="_blank" href={useBaseUrl("/issue/atom.xml")}>Atom format</Link>;
-    const rss = <Link target="_blank" href={useBaseUrl("/issue/rss.xml")}>RSS format</Link>;
+    const atom = <Link target="_blank" href={useBaseUrl("/newsletter/atom.xml")}>Atom format</Link>;
+    const rss = <Link target="_blank" href={useBaseUrl("/newsletter/rss.xml")}>RSS format</Link>;
     const pulsar = <Link href="https://pulsar.apache.org">Apache Pulsar</Link>;
 
     return (
@@ -23,7 +23,7 @@ function HomepageHeader() {
                     Click the "Browsing Issues" button below to see the most recent weekly issues.
                 </p>
                 <div className={styles.buttons}>
-                    <Link className="button button--secondary button--lg" to="/issue">
+                    <Link className="button button--secondary button--lg" to="/newsletter">
                         Browsing Issues
                     </Link>
                 </div>
