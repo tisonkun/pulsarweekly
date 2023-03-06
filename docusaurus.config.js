@@ -71,6 +71,9 @@ const config = {
                 darkTheme: darkCodeTheme,
             },
         }),
+    scripts: [
+        {defer: true, 'data-domain': "pulsarweekly.vercel.app", src: "https://plausible.io/js/script.js"},
+    ]
 };
 
 module.exports = config;
