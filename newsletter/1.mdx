@@ -3,4 +3,70 @@ date: 2023-03-06
 authors: [tison]
 ---
 
-# 📨 #1: Website redesign, Cherry picking, Adapters...
+# 📨 #1: Releases Maintenance
+
+Hi everyone!
+
+This is the first issue of Pulsar Weekly, an unofficial newsletter that brings you news about the development of [Apache Pulsar](https://pulsar.apache.org/) and its open and inclusive community.
+
+As this is the first issue, it can include some items happened a few weeks ago.
+
+<!-- truncate -->
+
+The community released [Apache Pulsar 2.11.0](https://pulsar.apache.org/blog/2023/01/20/Apache-Pulsar-2-11-0/) at January 11, 2023. And the next release (3.0.0) will be the first long-term support release.
+
+Here are threads about releases maintenance in the pass weeks:
+
+* Matteo Merli started [the vote of PIP-175](https://lists.apache.org/thread/pqkh9d784krtk0jrfcs164kwrl303m7l), "Extend time based release process", which defines the long-term support release. The vote has passed.
+* Enrico Olivelli started a discussion about [stop cherry-picking (breaking) changes to the released branches](https://lists.apache.org/thread/qfz1c52ddndf6rqj0nxc0p9ktz6goh7g).
+* tison wrote the [release policy](https://pulsar.apache.org/contribute/release-policy/) page for converting the proposal to a user-friendly document.
+
+## Releases and Candidates
+
+The community has four ongoing release processes in this week. What a release week!
+
+* Christophe Bornet drives Apache Pulsar Adapters Release 2.11.0. You can help test the latest [release candidate](https://lists.apache.org/thread/0lkzp1vkd9j7mwz8zp3cz8x5o76k9b46).
+* Baodi Shi drives Pulsar Node.js Client Release 1.8.1. You can help test the latest [release candidate](https://lists.apache.org/thread/yz49pmw9wcc19dqq8b448b87xmg98ncn).
+* Yunze Xu drives Pulsar Client Python Release 3.1.0. You can help test the latest [release candidate](https://lists.apache.org/thread/0mcdfw6ogof2bcl40m9p3gjzwolr8rw2).
+* Zike Yang drives Pulsar Go Client Release 0.10.0. You can help test the latest [release candidate](https://lists.apache.org/thread/13owg7m9fgq4z0w3z28mc97gm73jnbwd).
+
+## New Pull Requests
+
+* [[feat][txn] Transaction buffer snapshot writer reuse](https://github.com/apache/pulsar/pull/19641)
+* [[fix][txn] The second commit of same transaction will fail](https://github.com/apache/pulsar/pull/19662)
+* [[fix][broker] Filter system topic when getting topic list by binary proto](https://github.com/apache/pulsar/pull/19667)
+* [[improve][fn] PIP-237: Expose PulsarAdmin in SinkContext and SourceContext](https://github.com/apache/pulsar/pull/19679)
+* [[improve][broker] PIP-192 Switched Assigning and Releasing state order in the transfer protocol](https://github.com/apache/pulsar/pull/19683)
+* [[fix] [broker] Topic close failure leaves subscription in a permanent fence state](https://github.com/apache/pulsar/pull/19692)
+
+## Core Developments
+
+* [Yuri Mizushima has accepted the invitation to become a committer](https://lists.apache.org/thread/dbrxcm8bmm75qnp732c9334w3brqqt90). Congrats!
+* Asaf Mesika started a discussion about [PIP-249: Pulsar website redesign](https://lists.apache.org/thread/3of7dfhn4qk033hqlqpvbc8so6bcolz4).
+* Xiaoyu Hou started a discussion about [PIP-247: Notifications for partitions update](https://lists.apache.org/thread/bcry0cz4z7kzot8pc4nhbktfv44xrk2y).
+* Zike Yang started a discussion about [ClientVersion conflict across multiple language client](https://lists.apache.org/thread/n59k537fhthjnzkfxtc2p4zk4l0cv3mp).
+* Pengcheng Jiang started a discussion about [support custom compressionType for pulsar functions](https://lists.apache.org/thread/8z849bhp79ob23kf1p21f6kq7rd6bljq).
+* ZhangJian He started a discussion about [upgrade jersey version](https://lists.apache.org/thread/74cq2tyt3h62tgop61br9w3rgwqtlcvm).
+* Elliot West started a discussion about [PIP-252: Configurable compact topic retention](https://lists.apache.org/thread/oj6vpj9lxvvbhrm8zqyobzrvqpsmr4pt).
+* [Changing the PIP template](https://lists.apache.org/thread/jpbnc1p2vsmlx81t0fllsk3fp84od5ny) is under heated discussion.
+* [Using bouncycastle fips instead bouncycastle non-fips](https://lists.apache.org/thread/k31ngxn298okztnxtnndqx8l2b58tsz7) is under heated discussion.
+* [PIP-246: Improved PROTOBUF_NATIVE schema compatibility checks without using avro-protobuf](https://lists.apache.org/thread/c59qqzcf77w7gm9tq7thdmg0lt3qf5w8) is under heated discussion.
+* [Introducing Pulsar admin api to pulsar-client-go](https://lists.apache.org/thread/pd07btsz37mn1hw9o68ll88vf3toxs3m) is close to a consensus.
+
+## Questions about Pulsar
+
+* [15k TPS with Payload size of 52kb?](https://stackoverflow.com/questions/75518717/apache-pulsar-15k-tps-with-payload-size-of-52kb)
+* [Topic Level Replication](https://github.com/apache/pulsar/discussions/19682)
+
+## Meanwhile on Twitter
+
+* [Next Tuesday for OSHK meetup #72 for Apache Pulsar](https://twitter.com/sammyfung/status/1630545149460893696)
+
+## Comments
+
+* [Scalable distributed system principles in the context of redesigning Apache Pulsar's metadata solution](https://codingthestreams.com/pulsar/2023/03/02/scalable-distributed-system-principles.html) by Lari Hotari
+* [13 Reasons Why Enterprises Should Use Apache Pulsar](https://thenewstack.io/13-reasons-why-enterprises-should-use-apache-pulsar/) by Robert Kimani
+
+## Bonus: Quickstart
+
+The official document provides several ways for getting up and running with Pulsar. You can check out the [tutoriols](https://pulsar.apache.org/docs/2.11.x/getting-started-home/) and get onboard.
