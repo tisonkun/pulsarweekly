@@ -1,0 +1,49 @@
+---
+date: 2023-03-13
+authors: [tison]
+---
+
+# 📨 #2: Project Health
+
+Hi everyone!
+
+This is the second issue of Pulsar Weekly. [Apache Pulsar](https://pulsar.apache.org/) is an open-source, distributed messaging and streaming platform built for the cloud.
+
+Asaf started a discussion about [Committer Emiratus status](https://lists.apache.org/thread/3b0ojfyhjdgg4wcd0c4t0dftt0748r9s). A few of committers and PMC members expressed their opinions on merits and project health. You can learn how the Pulsar community works and what they think highly of on contribution.
+
+For further reading, I recommend you read the [Apache Pulsar Contribution Guide](https://pulsar.apache.org/contribute/). And if you read Chinese, I have a blog on [maintainer criteria](https://www.tisonkun.org/2022/09/12/maintainer-criterions/) for helping you get involved in the community.
+
+<!-- truncate -->
+
+## Releases and Candidates
+
+* Baodi Shi delivered Pulsar Node.js Client Release 1.8.1. You can [find it on npm](https://www.npmjs.com/package/pulsar-client) and read the [release notes](https://github.com/apache/pulsar-client-node/releases/tag/v1.8.1).
+* Christophe Bornet delivered Apache Pulsar Adapters Release 2.11.0. You can [find it on Maven](https://central.sonatype.com/artifact/org.apache.pulsar/pulsar-adapters/2.11.0).
+* Xiangying Meng drives Pulsar Release 2.10.4. You can help test the latest [release candidate](https://lists.apache.org/thread/d5b177o3sp9b7o9fqtoj2jvl4vc165dq).
+
+## Core Developments
+
+* Eric Shen from StreamNative [supported](https://lists.apache.org/thread/y7od6p2zyzo8lpy37mjdrkgmoln4cyt1) the proposal "Introducing Pulsar admin api to pulsar-client-go" and explained the in-house plan of incubating and donating pulsar-admin-go from streamnative org.
+* Mattison found a [critical bug causing session notification thread deadlock](https://lists.apache.org/thread/odofmj9h8ln6blozhgkgmx0mbyll45dp). It may affect 2.8.5, 2.9.4, 2.10.3, and 2.11.0. The current workaround is restarting the broker. It's [fixed](https://github.com/apache/pulsar/pull/19754) upstream and would be backport and delivered in the next patch release if any.
+* Kannar started a discussion about [reverse reading a topic](https://lists.apache.org/thread/k86wy7g8s9vfpo2j9o946cmfk7fg5x5d). If you have similar thoughts for such usages on Pulsar, you can share your ideas in the thread also.
+* Yunze Xu started a discussion about [PIP-254: Support configuring client version at SDK level](https://lists.apache.org/thread/65cf7w76tt23sbsjnr8rpfxqf1nt9s9l). If you're developing a Pulsar client, you may be interested in this topic.
+* Michael Marshall started a vote for [PIP-250: Add proxyVersion to CommandConnect](https://lists.apache.org/thread/d3z9ybv04qthcjg488vh572on7yf65c4).
+* Michael Marshall started a discussion about [PIP-257: Add Open ID Connect Support to Server Components](https://lists.apache.org/thread/ttdh74t6v5nznmtw436otk8qdymjvrfk).
+
+## Ecosystem
+
+* Tao Jiuming submitted a [patch](https://github.com/open-telemetry/opentelemetry-java-instrumentation/pull/5926) for Pulsar client support to OpenTelemetry java agent and it gets merged.
+* Neutron (Pulsar Scala Client) released [v0.7.2](https://twitter.com/volpegabriel87/status/1634614888487174148).
+* TestContainers for Go now has a [Pulsar example module](https://github.com/testcontainers/testcontainers-go/pull/872).
+
+## Questions about Pulsar
+
+* [How pulsar can handle ack between broker and consumer](https://stackoverflow.com/questions/75669017/how-pulsar-can-handle-ack-between-broker-and-consumer)
+* [Multiple subscriber and go routine not work together](https://stackoverflow.com/questions/75719496/multiple-subscriber-and-go-routine-not-work-together)
+
+## Meanwhile on Twitter
+
+* [Akanoa's live programming with pulsar-rs on Twitch](https://twitter.com/_Akanoa_/status/1634833013170409472)
+* [Getting started with Pulsar!](https://twitter.com/anthonyikeda/status/1635149090047815680)
+* [Asaf's talk on OpenTelemetry Metrics for Pulsar](https://twitter.com/asafmesika/status/1634868524144369666)
+* [Create an app that processes real-time data for live events](https://twitter.com/pythonwebconf/status/1634630543168921608)
